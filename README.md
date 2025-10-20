@@ -3,14 +3,22 @@ We present a MATLAB implementation of the Recursive State Preparation (RSP) and 
 
 ## Problem Formulation
 1. State Preparation: Given $n\in Z_+$, generate a quantum state $\ket{\psi} = \sum_{i=0}^{2^n-1}\psi_i\ket{i}$ from $\ket{0}^{\otimes n}$.
-2. Block encoding: Given a matrix $A$, generate a quantum circuit whose left-upper block of the matrix form $U$ is $A$ as
+2. Block encoding: Given a matrix $A$, generate a quantum circuit whose left-upper block of the matrix form $U$ is $A/\alpha$ as
    
 $$
-    U = \begin{bmatrix} A & * \\
-    * & *  \end{bmatrix}
+    U = \begin{bmatrix} A/\alpha & * \\
+    * & *  \end{bmatrix}.
 $$
 
-** How to use as few CNOT gates as possible to generate quantum circuit of state preparation and block encoding **
+Formally, a $(a,\alpha,\epsilon)$-block-encoding statisfy that 
+
+$$
+   \Vert (\bra{0}^{\otimes a}\otimes I)  U  (\ket{0}^{\otimes a}\otimes I) - A/\alpha \Vert \leq \varepsilon,
+$$
+
+where $a$ is the number of ancillas, $\alpha$ is the subnotmalization, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
+
+**How to use as few CNOT gates as possible to generate quantum circuit of state preparation and (1,\Vert A\Vert_2,0)-block-encoding.**
 
 
 
@@ -19,7 +27,7 @@ $$
 
 # 1. Recursive State Preparation (RSP)
 
-## Comparison of the number of C-NOT gates between proposed recursive state preparation method (RSP) and other state preparation algorithms. 
+**Table: Comparison of the number of C-NOT gates between proposed recursive state preparation method (RSP) and other state preparation algorithms.**
 
 | Methods | Script | 2 | 3 | 4 | 5 | 10 | 15 | Leading constant |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
