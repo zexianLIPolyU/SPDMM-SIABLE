@@ -2,13 +2,13 @@
 We present a MATLAB implementation of the Recursive State Preparation (RSP) and Single Ancilla Block Encoding (SIABLE) protocols, designed to use as few CNOT gates as possible. This implementation is built upon the [QCLAB](https://github.com/QuantumComputingLab/qclabs) framework.
 
 ## Problem Formulation
-1.  **State Preparation:** Given $n \in \mathbb{Z}_+$ and a vector $\{\psi_i\}_{i=0}^{2^n-1}$ whose $\ell_2$-norm is $1$, generate the quantum state:
+1.  **State Preparation:** Given $n \in Z_+$ and a vector $$\[\psi_i\]_{i=0}^{2^n-1}$$ whose $$\ell_2$$-norm is $$1$$, generate the quantum state:
 
-    $$
-    |\psi\rangle = \sum_{i=0}^{2^n-1} \psi_i |i\rangle
-    $$
+$$
+    \ket{\psi} = \sum_{i=0}^{2^n-1} \psi_i |i\rangle
+$$
     
-    from the initial state $|0\rangle^{\otimes n}$.
+from the initial state $|0\rangle^{\otimes n}$.
     
 2. **Block Encoding:** Given a complex matrix $A$, generate a quantum circuit whose left-upper block of the matrix form $U$ is $A/\alpha$ as
    
@@ -25,7 +25,10 @@ $$
 
 where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
 
-**How to use as few CNOT gates as possible to generate quantum circuit of state preparation and $(\Vert A\Vert_2,1,0)$-block-encoding.**
+
+**Question:**
+
+**How to use as few CNOT gates as possible to generate quantum circuit of state preparation and ($$\Vert A\Vert_2$$,1,0)-block-encoding ?**
 
 
 
