@@ -20,7 +20,7 @@ $$
 Formally, a $(\alpha,a,\epsilon)$-block-encoding statisfy that 
 
 $$
-   \Vert \alpah(\bra{0}^{\otimes a}\otimes I)  U  (\ket{0}^{\otimes a}\otimes I) - A \Vert \leq \varepsilon,
+   \Vert \alpha (\bra{0}^{\otimes a}\otimes I)  U  (\ket{0}^{\otimes a}\otimes I) - A \Vert \leq \varepsilon,
 $$
 
 where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
