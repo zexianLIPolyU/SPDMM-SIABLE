@@ -5,11 +5,12 @@ We present a MATLAB implementation of the Recursive State Preparation (RSP) and 
 1. State Preparation: Given $n\in Z_+$, generate a quantum state $\ket{\psi} = \sum_{i=0}^{2^n-1}\psi_i\ket{i}$ from $\ket{0}^{\otimes n}$.
 2. Block encoding: Given a matrix $A$, generate a quantum circuit whose left-upper block of the matrix form $U$ is $A$ as
    
-   $$
-    U = \begin{bmatrix} A & * \\ * & *  \end{bmatrix}
-   $$ 
+$$
+    U = \begin{bmatrix} A & * \\
+    * & *  \end{bmatrix}
+$$
 
-
+** How to use as few CNOT gates as possible to generate quantum circuit of state preparation and block encoding **
 
 
 
