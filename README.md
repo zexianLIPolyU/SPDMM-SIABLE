@@ -46,7 +46,7 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 | Isometry | [qiskit](https://quantum.cloud.ibm.com/docs/api/qiskit/qiskit.circuit.library.StatePreparation) | 1 | 4 | 11 | 26 | 1013 | 32752 | $23/24$ |
 | LRSP | [qclib](https://github.com/qclib/qclib) | 1 | 4 | 9 | 21 | 913 | 30999 | $23/24$ |
 | **RSP** **(Proposed method)** | [rsp](https://github.com/zexianLIPolyU/siable/blob/main/test_state_preparation.m) | 1 | **3** | **7** | **18** | **867** | **29627** | $11/12$ |
-| **Lower bounds**| - | 1 | 2 | 5 | 12 | 505 | 16373 | $1/2$
+| **Theoretical lower bound for state preparation**| - | 1 | 2 | 5 | 12 | 505 | 16373 | $1/2$
 
 ## 2. Single Ancilla Block Encoding Protocol (SIABLE)
 
@@ -62,7 +62,7 @@ Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siabl
 | Block-ZXZ | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | 19 | 95 | 423 | 1783 | 7319 | $(22/48)\times4^n - (3/2)\times 2^n + (5/3)$ |
 | Shende's lower bound | - | 14 | 61 | 252 | 1020 | 4091 | $\lceil (1/4)\times(4^n - 3n - 1) \rceil$ |
 | **SIABLE for full-rank matrix** <br> **(Proposed method)** | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | **9** | **45** | **205** | **877** | **3629** | $(11/48)\times 4^n - 2^n + (7/3)$ |
-| **Lower bounds**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$ 
+| **Theoretical lower bound for block encoding**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$ 
 
 ### 2.2 Low-rank matrix encoding
 
