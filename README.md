@@ -31,6 +31,34 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 **How to use as few CNOT gates as possible to generate quantum circuit of state preparation and ($$\Vert A\Vert_2$$,1,0)-block-encoding ?**
 
 
+# Implementation 
+
+In order to run the MATLAB implementation of Recursive State Preparation (RSP) and Single Ancilla Block Encoding Protocol (SIABLE):
+1. Down [rsp-siable](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/rsp_siable) and [QCLAB](https://github.com/QuantumComputingLab/qclab) repositories.
+2. Unzip it and add `rsp_siable` and `QCLAB` files into your MATLAB path.
+    ```
+    cd("rsp_siable")
+    cd("QCLAB")
+    ```
+3. State preparation can be run by
+     ```
+      n = 5;
+      N = pow2(n) ; 
+      state_complex = randn(N,1) + randn(N,1) .* 1j ; 
+      state_complex = state_complex ./ norm(state_complex,2) ; 
+      logging = true; % no record 
+      [circuit, global_phase, CNOT_count] = state_preparation( state_complex, 1, logging ) ; 
+      fprintf("N_state(%d) = %d\n\n ", n, CNOT_count) ; 
+      circuit.draw()
+      M = circuit.matrix;
+      norm(M(:,1) .* global_phase - state_complex )
+     ```
+
+4. Test single ancilla block encoding protocol for full-rank and low-rank matrix 
+   
+      See demo in [test_siable_image.mlx](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/test_siable_image.mlx). 
+
+
 
 
 
@@ -79,33 +107,5 @@ Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/
 | 7                  | 148 | 662  | 1098 | 1532 | 1970 |       | 3629      |
 | 8                  | 314 | 1178 | 1940 | 2700 | 3464 | 7064  | 14765     |
 | 9                  | 654 | 2044 | 3308 | 4570 | 5836 | 11898 | 59565
-
-
-# Implementation 
-
-In order to run the MATLAB implementation of Recursive State Preparation (RSP) and Single Ancilla Block Encoding Protocol (SIABLE):
-1. Down [rsp-siable](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/rsp_siable) and [QCLAB](https://github.com/QuantumComputingLab/qclab) repositories.
-2. Unzip it and add `rsp_siable` and `QCLAB` files into your MATLAB path.
-    ```
-    cd("rsp_siable")
-    cd("QCLAB")
-    ```
-3. State preparation can be run by
-     ```
-      n = 5;
-      N = pow2(n) ; 
-      state_complex = randn(N,1) + randn(N,1) .* 1j ; 
-      state_complex = state_complex ./ norm(state_complex,2) ; 
-      logging = true; % no record 
-      [circuit, global_phase, CNOT_count] = state_preparation( state_complex, 1, logging ) ; 
-      fprintf("N_state(%d) = %d\n\n ", n, CNOT_count) ; 
-      circuit.draw()
-      M = circuit.matrix;
-      norm(M(:,1) .* global_phase - state_complex )
-     ```
-
-4. Test single ancilla block encoding protocol for full-rank and low-rank matrix 
-   
-      See demo in [test_siable_image.mlx](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/test_siable_image.mlx). 
 
 
