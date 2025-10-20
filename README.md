@@ -35,7 +35,7 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 
 
 
-# Result
+# Result 
 ## 1. Recursive State Preparation (RSP)
 
 **Table: Comparison of the number of C-NOT gates between proposed recursive state preparation method (RSP) and other state preparation algorithms.**
