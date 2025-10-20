@@ -8,7 +8,7 @@ $$
     \ket{\psi} = \sum_{i=0}^{2^n-1} \psi_i |i\rangle
 $$
     
-    from the initial state $|0\rangle^{\otimes n}$.
+from the initial state $|0\rangle^{\otimes n}$.
     
 2. **Block Encoding:** Given a complex matrix $A$, generate a quantum circuit whose left-upper block of the matrix form $U$ is $A/\alpha$ as
    
@@ -17,13 +17,13 @@ $$
     * & *  \end{bmatrix}.
 $$
 
-    Formally, a $(\alpha,a,\epsilon)$-block-encoding statisfy that 
-    
-    $$
-       \Vert (\bra{0}^{\otimes a}\otimes I)  U  (\ket{0}^{\otimes a}\otimes I) - A/\alpha \Vert \leq \varepsilon,
-    $$
-    
-    where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
+Formally, a $(\alpha,a,\epsilon)$-block-encoding statisfy that 
+
+$$
+   \Vert (\bra{0}^{\otimes a}\otimes I)  U  (\ket{0}^{\otimes a}\otimes I) - A/\alpha \Vert \leq \varepsilon,
+$$
+
+where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
 
 
 **Question:**
