@@ -30,6 +30,33 @@ Please download the [QCLAB](https://github.com/QuantumComputingLab/qclabs) and [
 | **Lower bounds**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$
 
 
+# 3. Implementation 
+
+In order to run the MATLAB implementation of Recursive State Preparation (RSP) and Single Ancilla Block Encoding Protocol (SIABLE):
+1. Down [rsp-siable](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/rsp_siable) and [QCLAB](https://github.com/QuantumComputingLab/qclab) repositories.
+2. Unzip it and add `rsp_siable` and `QCLAB` files into your MATLAB path.
+    ```
+    cd("rsp_siable")
+    cd("QCLAB")
+    ```
+3. State preparation can be run by
+     ```
+      n = 5;
+      N = pow2(n) ; 
+      state_complex = randn(N,1) + randn(N,1) .* 1j ; 
+      state_complex = state_complex ./ norm(state_complex,2) ; 
+      logging = true; % no record 
+      [circuit, global_phase, CNOT_count] = state_preparation( state_complex, 1, logging ) ; 
+      fprintf("N_state(%d) = %d\n\n ", n, CNOT_count) ; 
+      circuit.draw()
+      M = circuit.matrix;
+      norm(M(:,1) .* global_phase - state_complex )
+     ```
+
+
+
+
+
 
 
 
