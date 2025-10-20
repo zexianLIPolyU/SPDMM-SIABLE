@@ -22,6 +22,7 @@ Please download the [QCLAB](https://github.com/QuantumComputingLab/qclabs) and [
 ## 2.1. Full-rank matrix encoding 
 
 Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siable/siable.m)
+
 **Table: Comparison of the number of C-NOT gates between the single ancilla block encoding protocol (SIABLE) for general $2^{n-1}\times 2^{n-1}$ full-rank matrix and other unitary synthesis protocol and bounds in an $n$-qubit system.**
 
 | Number of qubits | Script | 3 | 4 | 5 | 6 | 7 | n |
@@ -35,6 +36,7 @@ Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siabl
 ## 2.2 Low-rank matrix encoding
 
 Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siable/siable_low_rank.m)
+
 **Table: Number of C-NOT gates in the single ancilla block encoding protocol (SIABLE) for general low-rank and full-rank $2^{n-1}\times 2^{n-1}$ matrix with a single ancilla.**
 
 | $n\backslash$rank | 1   | 2    | 3    | 4    | 5    | 10    | full-rank |
