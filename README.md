@@ -18,7 +18,7 @@ $$
 
 where $a$ is the number of ancillas, $\alpha$ is the subnotmalization, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
 
-**How to use as few CNOT gates as possible to generate quantum circuit of state preparation and (1,\Vert A\Vert_2,0)-block-encoding.**
+**How to use as few CNOT gates as possible to generate quantum circuit of state preparation and $(1,\Vert A\Vert_2,0)$-block-encoding.**
 
 
 
