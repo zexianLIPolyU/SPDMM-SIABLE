@@ -1,9 +1,10 @@
 function [circuit, global_phase, CNOT_count] = state_preparation( vector, offset, logging )
-% state_preparation 
+% Recursive State Preparation (RSP) 
 %   reference:  
-%   1. M. Plesch and C. Brukner, Quantum-state preparation with
+%   1. Li Zexian et al., Improving C-NOT Counts for Quantum State Preparation and Block Encoding via Diagonal Matrix Migration.
+%   2. M. Plesch and C. Brukner, Quantum-state preparation with
 %      universal gate decompositions, Phys. Rev. A 83, 032302 (2011). 
-%   2. Raban Iten et, Quantum Circuits for Isometries, Phys. Rev. A 93,
+%   3. Raban Iten et, Quantum Circuits for Isometries, Phys. Rev. A 93,
 %      032318 (2016). 
 % --------------------------------------------------
 % test program:
