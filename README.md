@@ -19,7 +19,10 @@ Please download the [QCLAB](https://github.com/QuantumComputingLab/qclabs) and [
 
 # 2. Single Ancilla Block Encoding Protocol (SIABLE)
 
-## 2.1. Comparison of the number of C-NOT gates between the single ancilla block encoding protocol (SIABLE) for general $2^{n-1}\times 2^{n-1}$ full-rank matrix and other unitary synthesis protocol and bounds in an $n$-qubit system.
+## 2.1. Full-rank matrix encoding 
+
+Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siable/siable.m)
+**Table: Comparison of the number of C-NOT gates between the single ancilla block encoding protocol (SIABLE) for general $2^{n-1}\times 2^{n-1}$ full-rank matrix and other unitary synthesis protocol and bounds in an $n$-qubit system.**
 
 | Number of qubits | Script | 3 | 4 | 5 | 6 | 7 | n |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -29,7 +32,9 @@ Please download the [QCLAB](https://github.com/QuantumComputingLab/qclabs) and [
 | **SIABLE for full-rank matrix** <br> **(Proposed method)** | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | **9** | **45** | **205** | **877** | **3629** | $(11/48)\times 4^n - 2^n + (7/3)$ |
 | **Lower bounds**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$ 
 
-## 2.2 Number of C-NOT gates for low-rank matrix 
+## 2.2 Low-rank matrix encoding
+
+Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siable/siable_low_rank.m)
 **Table: Number of C-NOT gates in the single ancilla block encoding protocol (SIABLE) for general low-rank and full-rank $2^{n-1}\times 2^{n-1}$ matrix with a single ancilla.**
 
 | $n\backslash$rank | 1   | 2    | 3    | 4    | 5    | 10    | full-rank |
