@@ -2,8 +2,8 @@
 We present a MATLAB implementation of the Recursive State Preparation (RSP) and Single Ancilla Block Encoding (SIABLE) protocols, designed to use as few CNOT gates as possible. This implementation is built upon the [QCLAB](https://github.com/QuantumComputingLab/qclabs) framework.
 
 ## Problem Formulation
-1. State Preparation: Given $n\in Z_+$ and a vector $[\psi_i]_{i=0}^{2^n-1}$ whose $l_2$-norm is $1$, generate a quantum state $\ket{\psi} = \sum_{i=0}^{2^n-1}\psi_i\ket{i}$ from $\ket{0}^{\otimes n}$.
-2. Block encoding: Given a complex matrix $A$, generate a quantum circuit whose left-upper block of the matrix form $U$ is $A/\alpha$ as
+1.  **State Preparation:**  Given $n \in \mathbb{Z}_+$ and a vector $\{ \psi_i | i=0,1,...,2^n-1 \}$ whose $\ell_2$-norm is $1$, generate a quantum state $|\psi\rangle = \sum_{i=0}^{2^n-1} \psi_i |i\rangle$ from $|0\rangle^{\otimes n}$.
+2. **Block Encoding:** Given a complex matrix $A$, generate a quantum circuit whose left-upper block of the matrix form $U$ is $A/\alpha$ as
    
 $$
     U = \begin{bmatrix} A/\alpha & * \\
