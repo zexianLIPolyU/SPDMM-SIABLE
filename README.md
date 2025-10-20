@@ -41,7 +41,7 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 
 In order to run the MATLAB implementation of Recursive State Preparation (RSP) and Single Ancilla Block Encoding Protocol (SIABLE):
 1. Down [rsp-siable](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/rsp_siable) and [QCLAB](https://github.com/QuantumComputingLab/qclab) repositories.
-2. Unzip it and add `rsp_siable` and `QCLAB` files into your MATLAB path.
+2. Unzip it and add [`rsp_siable`](https://github.com/zexianLIPolyU/RSP-SIABLE) and [`QCLAB`](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/QCLAB) files into your MATLAB path.
     ```
     cd("rsp_siable")
     cd("QCLAB")
