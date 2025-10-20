@@ -2,7 +2,10 @@ function circuit = MCG( target, U, controls, controlStates, circuit )
 % MCG() -- Simulate the qauntum circuit to prepare multiple controlled
 % special unitary single-qubit gate in a non-strict way
 % 
-% Author can refer -- Circuit decomposition of multicontrolled special unitary single-qubit gates. Trans. Comp.-Aided Des. Integ. Cir. Sys., 43(3):802–811, March 2024. 
+% You can refer --
+% Efficient implementation of multicontrolled quantum gates, Phys. Rev. Appl., vol. 24, p. 044 030, 4 2025
+%  or
+%  Circuit decomposition of multicontrolled special unitary single-qubit gates. Trans. Comp.-Aided Des. Integ. Cir. Sys., 43(3):802–811, March 2024. 
 % to get the optimized circuit with fewer CNOT gates. 
 % ---------------------------------------- 
 % input:
