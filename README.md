@@ -16,7 +16,7 @@ $$
    \Vert (\bra{0}^{\otimes a}\otimes I)  U  (\ket{0}^{\otimes a}\otimes I) - A/\alpha \Vert \leq \varepsilon,
 $$
 
-where $a$ is the number of ancillas, $\alpha$ is the subnotmalization, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
+where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsilon$ is the precision. The optimal subnotmalization of a block encoding is the spectral norm $\Vert A\Vert_2$ and the fewest number of ancillas is $1$. 
 
 **How to use as few CNOT gates as possible to generate quantum circuit of state preparation and $(\Vert A\Vert_2,1,0)$-block-encoding.**
 
