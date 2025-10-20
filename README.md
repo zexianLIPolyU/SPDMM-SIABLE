@@ -92,7 +92,7 @@ Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siabl
 | **SIABLE for full-rank matrix** <br> **(Proposed method)** | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | **9** | **45** | **205** | **877** | **3629** | $(11/48)\times 4^n - 2^n + (7/3)$ |
 | **Theoretical lower bound for block encoding**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$ 
 
-### 2.2 Low-rank matrix encoding
+### 2.2. Low-rank matrix encoding
 
 Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siable/siable_low_rank.m)
 
