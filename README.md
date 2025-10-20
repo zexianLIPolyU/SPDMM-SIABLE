@@ -39,7 +39,7 @@ Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/
 
 **Table: Number of C-NOT gates in the single ancilla block encoding protocol (SIABLE) for general low-rank and full-rank $2^{n-1}\times 2^{n-1}$ matrix with a single ancilla.**
 
-| $n\backslash$rank | 1   | 2    | 3    | 4    | 5    | 10    | full-rank |
+| n\rank | 1   | 2    | 3    | 4    | 5    | 10    | full-rank |
 |--------------------|-----|------|------|------|------|-------|-----------|
 | 3                  | 6   |      |      |      |      |       | 9         |
 | 4                  | 14  |      |      |      |      |       | 45        |
