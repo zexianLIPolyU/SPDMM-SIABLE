@@ -1,7 +1,10 @@
 # Recursive State Preparation (RSP) and Single Ancilla Block Encoding (SIABLE)
-We present a MATLAB implementation of the Recursive State Preparation (RSP) and Single Ancilla Block Encoding (SIABLE) protocols, designed to use as few CNOT gates as possible. This implementation is built upon the [QCLAB](https://github.com/QuantumComputingLab/qclabs) framework.
+> **We present a MATLAB implementation of the Recursive State Preparation (RSP) and Single Ancilla Block Encoding (SIABLE) protocols, designed to use as few CNOT gates as possible. This implementation is built upon the [QCLAB](https://github.com/QuantumComputingLab/qclabs) framework.**
 
 ## Problem Formulation
+
+<div align="center"> 
+    
 1.  **State Preparation:** Given $n \in Z_+$ and a vector $$\[\psi_i\]_{i=0}^{2^n-1}$$ whose $$\ell_2$$-norm is $$1$$, generate the quantum state:
 
 $$
@@ -30,6 +33,9 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 
 **How to use as few CNOT gates as possible to generate quantum circuit of state preparation and ($$\Vert A\Vert_2$$,1,0)-block-encoding ?**
 
+</div>
+
+---
 
 # Implementation 
 
@@ -60,7 +66,7 @@ In order to run the MATLAB implementation of Recursive State Preparation (RSP) a
 
 
 
-
+---
 
 
 # Result 
@@ -108,4 +114,4 @@ Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/
 | 8                  | 314 | 1178 | 1940 | 2700 | 3464 | 7064  | 14765     |
 | 9                  | 654 | 2044 | 3308 | 4570 | 5836 | 11898 | 59565
 
-
+---
