@@ -16,6 +16,7 @@ function [circuit, subnormalization, info, global_phase] = siable(Matrix, loggin
 % Copyright LI Zexian 2025.
 %
 % Reference: 
+% Improving C-NOT Counts for Quantum State Preparation and Block Encoding via Diagonal Matrix Migration
 % Minimal universal two-qubit controlled-NOT-based circuits
 % Beyond quantum Shannon decomposition: Circuit construction for n-qubit gates based on block-ZXZ decomposition
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
