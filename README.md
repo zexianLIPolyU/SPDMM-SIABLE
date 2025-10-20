@@ -25,7 +25,8 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 
 
 
-# 1. Recursive State Preparation (RSP)
+# Result
+## 1. Recursive State Preparation (RSP)
 
 **Table: Comparison of the number of C-NOT gates between proposed recursive state preparation method (RSP) and other state preparation algorithms.**
 
@@ -37,9 +38,9 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 | **RSP** **(Proposed method)** | [rsp](https://github.com/zexianLIPolyU/siable/blob/main/test_state_preparation.m) | 1 | **3** | **7** | **18** | **867** | **29627** | $11/12$ |
 | **Lower bounds**| - | 1 | 2 | 5 | 12 | 505 | 16373 | $1/2$
 
-# 2. Single Ancilla Block Encoding Protocol (SIABLE)
+## 2. Single Ancilla Block Encoding Protocol (SIABLE)
 
-## 2.1. Full-rank matrix encoding 
+### 2.1. Full-rank matrix encoding 
 
 Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siable/siable.m)
 
@@ -53,7 +54,7 @@ Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siabl
 | **SIABLE for full-rank matrix** <br> **(Proposed method)** | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | **9** | **45** | **205** | **877** | **3629** | $(11/48)\times 4^n - 2^n + (7/3)$ |
 | **Lower bounds**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$ 
 
-## 2.2 Low-rank matrix encoding
+### 2.2 Low-rank matrix encoding
 
 Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siable/siable_low_rank.m)
 
