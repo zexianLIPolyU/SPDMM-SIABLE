@@ -19,7 +19,7 @@ Please download the [QCLAB](https://github.com/QuantumComputingLab/qclabs) and [
 
 # 2. Single Ancilla Block Encoding Protocol (SIABLE)
 
-## Comparison of the number of C-NOT gates between the single ancilla block encoding protocol (SIABLE) for general $2^{n-1}\times 2^{n-1}$ full-rank matrix and other unitary synthesis protocol and bounds in an $n$-qubit system.
+## 2.1. Comparison of the number of C-NOT gates between the single ancilla block encoding protocol (SIABLE) for general $2^{n-1}\times 2^{n-1}$ full-rank matrix and other unitary synthesis protocol and bounds in an $n$-qubit system.
 
 | Number of qubits | Script | 3 | 4 | 5 | 6 | 7 | n |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -27,7 +27,20 @@ Please download the [QCLAB](https://github.com/QuantumComputingLab/qclabs) and [
 | Block-ZXZ | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | 19 | 95 | 423 | 1783 | 7319 | $(22/48)\times4^n - (3/2)\times 2^n + (5/3)$ |
 | Shende's lower bound | - | 14 | 61 | 252 | 1020 | 4091 | $\lceil (1/4)\times(4^n - 3n - 1) \rceil$ |
 | **SIABLE for full-rank matrix** <br> **(Proposed method)** | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | **9** | **45** | **205** | **877** | **3629** | $(11/48)\times 4^n - 2^n + (7/3)$ |
-| **Lower bounds**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$
+| **Lower bounds**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$ 
+
+## 2.2 Number of C-NOT gates for low-rank matrix 
+**Table: Number of C-NOT gates in the single ancilla block encoding protocol (SIABLE) for general low-rank and full-rank $2^{n-1}\times 2^{n-1}$ matrix with a single ancilla.**
+
+| $n\backslash$rank | 1   | 2    | 3    | 4    | 5    | 10    | full-rank |
+|--------------------|-----|------|------|------|------|-------|-----------|
+| 3                  | 6   |      |      |      |      |       | 9         |
+| 4                  | 14  |      |      |      |      |       | 45        |
+| 5                  | 30  |      |      |      |      |       | 205       |
+| 6                  | 68  | 616  |      |      |      |       | 877       |
+| 7                  | 148 | 662  | 1098 | 1532 | 1970 |       | 3629      |
+| 8                  | 314 | 1178 | 1940 | 2700 | 3464 | 7064  | 14765     |
+| 9                  | 654 | 2044 | 3308 | 4570 | 5836 | 11898 | 59565
 
 
 # 3. Implementation 
