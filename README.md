@@ -81,7 +81,7 @@ Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/
 | 9                  | 654 | 2044 | 3308 | 4570 | 5836 | 11898 | 59565
 
 
-# 3. Implementation 
+# Implementation 
 
 In order to run the MATLAB implementation of Recursive State Preparation (RSP) and Single Ancilla Block Encoding Protocol (SIABLE):
 1. Down [rsp-siable](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/rsp_siable) and [QCLAB](https://github.com/QuantumComputingLab/qclab) repositories.
