@@ -62,7 +62,8 @@ In order to run the MATLAB implementation of Recursive State Preparation (RSP) a
 
 4. Test single ancilla block encoding protocol (SIABLE) for full-rank and low-rank matrix 
    
-      See demo in [test_siable_image.mlx](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/test_siable_image.mlx). 
+      See demo in [test_siable_CNOT.m](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/test_siable_CNOT.m) for counting the C-NOT gates;
+      demo in [test_siable_image.mlx](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/test_siable_image.mlx) for encoding imgaes. 
 
 
 
