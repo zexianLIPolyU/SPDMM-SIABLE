@@ -40,7 +40,7 @@ In order to run the MATLAB implementation of Recursive State Preparation (RSP) a
     cd("rsp_siable")
     cd("QCLAB")
     ```
-3. State preparation can be run by
+3. Recursive state preparation (RSP) can be run by
      ```
       n = 5;
       N = pow2(n) ; 
@@ -54,7 +54,7 @@ In order to run the MATLAB implementation of Recursive State Preparation (RSP) a
       norm(M(:,1) .* global_phase - state_complex )
      ```
 
-4. Test single ancilla block encoding protocol for full-rank and low-rank matrix 
+4. Test single ancilla block encoding protocol (SIABLE) for full-rank and low-rank matrix 
    
       See demo in [test_siable_image.mlx](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/test_siable_image.mlx). 
 
