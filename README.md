@@ -3,7 +3,7 @@
 
 ## Problem Formulation
 
-<div align="center"> 
+<div align="left"> 
     
 1.  **State Preparation:** Given $n \in Z_+$ and a vector $$\[\psi_i\]_{i=0}^{2^n-1}$$ whose $$\ell_2$$-norm is $$1$$, generate the quantum state:
 
