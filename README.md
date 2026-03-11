@@ -81,7 +81,7 @@ In order to run the MATLAB implementation of Recursive State Preparation via Dia
 | PB | [qclib](https://github.com/qclib/qclib) | 1 | 4 | 9 | 26 | 919 | 38813 | $23/24$ |
 | Isometry | [qiskit](https://quantum.cloud.ibm.com/docs/api/qiskit/qiskit.circuit.library.StatePreparation) | 1 | 4 | 11 | 26 | 1013 | 32752 | $23/24$ |
 | LRSP | [qclib](https://github.com/qclib/qclib) | 1 | 4 | 9 | 21 | 913 | 30999 | $23/24$ |
-| **SPDMM** **(Proposed method)** | [rsp](https://github.com/zexianLIPolyU/siable/blob/main/test_state_preparation.m) | 1 | **3** | **7** | **18** | **867** | **29627** | $11/12$ |
+| **SPDMM** **(Proposed method)** | [spdm](https://github.com/zexianLIPolyU/siable/blob/main/test_state_preparation.m) | 1 | **3** | **7** | **18** | **867** | **29627** | $11/12$ |
 | **Theoretical lower bound for state preparation**| - | 1 | 2 | 5 | 12 | 505 | 16373 | $1/2$
 
 ## 2. Single Ancilla Block Encoding Protocol (SIABLE)
@@ -97,7 +97,7 @@ Script: [siable](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/rsp_siabl
 | QSD | [qiskit](https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.transpiler.passes.UnitarySynthesis) | 20 | 100 | 444 | 1868 | 7660 | $(23/48)\times4^n - (3/2)\times 2^n + (4/3)$ |
 | Block-ZXZ | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | 19 | 95 | 423 | 1783 | 7319 | $(22/48)\times4^n - (3/2)\times 2^n + (5/3)$ |
 | Shende's lower bound | - | 14 | 61 | 252 | 1020 | 4091 | $\lceil (1/4)\times(4^n - 3n - 1) \rceil$ |
-| **SIABLE for full-rank matrix** <br> **(Proposed method)** | [siable](https://github.com/zexianLIPolyU/siable/blob/main/test_siable_CNOT.m) | **9** | **45** | **205** | **877** | **3629** | $(11/48)\times 4^n - 2^n + (7/3)$ |
+| **SIABLE for full-rank matrix** <br> **(Proposed method)** | [spdmm](https://github.com/zexianLIPolyU/SPDMM-SIABLE/blob/main/test_siable_CNOT.m) | **9** | **45** | **205** | **877** | **3629** | $(11/48)\times 4^n - 2^n + (7/3)$ |
 | **Theoretical lower bound for block encoding**| - | 6 | 29 | 125 | 508 | 2043 | $\lceil (1/8)\times4^n - (3/4)\times n \rceil$ 
 
 ### 2.2. Low-rank matrix encoding
