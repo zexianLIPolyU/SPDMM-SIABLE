@@ -1,4 +1,4 @@
-# Recursive State Preparation (RSP) and Single Ancilla Block Encoding (SIABLE)
+# Recursive State Preparation Method via Diagonal Matrix Migration (SPDMM) and Single Ancilla Block Encoding (SIABLE)
 > **We present a MATLAB implementation of the Recursive State Preparation (RSP) and Single Ancilla Block Encoding (SIABLE) protocols, designed to use as few CNOT gates as possible. This implementation is built upon the [QCLAB](https://github.com/QuantumComputingLab/qclabs) framework.**
 
 ## Problem Formulation
@@ -41,12 +41,12 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 
 In order to run the MATLAB implementation of Recursive State Preparation (RSP) and Single Ancilla Block Encoding Protocol (SIABLE):
 1. Down [rsp-siable](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/rsp_siable) and [QCLAB](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/QCLAB) repositories.
-2. Unzip it and add `rsp_siable` and `QCLAB` files into your MATLAB path.
+2. Unzip it and add `spdmm_siable` and `QCLAB` files into your MATLAB path.
     ```
-    cd("rsp_siable")
+    cd("spdmm_siable")
     cd("QCLAB")
     ```
-3. Recursive state preparation (RSP) can be run by
+3. State preparation (SPDMM) can be run by
      ```
       n = 5;
       N = pow2(n) ; 
@@ -72,7 +72,7 @@ In order to run the MATLAB implementation of Recursive State Preparation (RSP) a
 
 
 # Result 
-## 1. Recursive State Preparation (RSP)
+## 1. State Preparation via Diagonal Matrix Migration (SPDMM)
 
 **Table: Comparison of the number of C-NOT gates between proposed recursive state preparation method (RSP) and other state preparation algorithms.**
 
@@ -81,7 +81,7 @@ In order to run the MATLAB implementation of Recursive State Preparation (RSP) a
 | PB | [qclib](https://github.com/qclib/qclib) | 1 | 4 | 9 | 26 | 919 | 38813 | $23/24$ |
 | Isometry | [qiskit](https://quantum.cloud.ibm.com/docs/api/qiskit/qiskit.circuit.library.StatePreparation) | 1 | 4 | 11 | 26 | 1013 | 32752 | $23/24$ |
 | LRSP | [qclib](https://github.com/qclib/qclib) | 1 | 4 | 9 | 21 | 913 | 30999 | $23/24$ |
-| **RSP** **(Proposed method)** | [rsp](https://github.com/zexianLIPolyU/siable/blob/main/test_state_preparation.m) | 1 | **3** | **7** | **18** | **867** | **29627** | $11/12$ |
+| **SPDMM** **(Proposed method)** | [rsp](https://github.com/zexianLIPolyU/siable/blob/main/test_state_preparation.m) | 1 | **3** | **7** | **18** | **867** | **29627** | $11/12$ |
 | **Theoretical lower bound for state preparation**| - | 1 | 2 | 5 | 12 | 505 | 16373 | $1/2$
 
 ## 2. Single Ancilla Block Encoding Protocol (SIABLE)
