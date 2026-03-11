@@ -39,8 +39,8 @@ where $\alpha$ is the subnotmalization, $a$ is the number of ancillas, $\varepsi
 
 # Implementation 
 
-In order to run the MATLAB implementation of Recursive State Preparation (RSP) and Single Ancilla Block Encoding Protocol (SIABLE):
-1. Down [rsp-siable](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/rsp_siable) and [QCLAB](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/QCLAB) repositories.
+In order to run the MATLAB implementation of Recursive State Preparation via Diagonal Matrix Migration (SPDMM) and Single Ancilla Block Encoding Protocol (SIABLE):
+1. Down [spdmm_siable](https://github.com/zexianLIPolyU/SPDMM-SIABLE/tree/main/spdmm_siable) and [QCLAB](https://github.com/zexianLIPolyU/RSP-SIABLE/tree/main/QCLAB) repositories.
 2. Unzip it and add `spdmm_siable` and `QCLAB` files into your MATLAB path.
     ```
     cd("spdmm_siable")
@@ -74,7 +74,7 @@ In order to run the MATLAB implementation of Recursive State Preparation (RSP) a
 # Result 
 ## 1. State Preparation via Diagonal Matrix Migration (SPDMM)
 
-**Table: Comparison of the number of C-NOT gates between proposed recursive state preparation method (RSP) and other state preparation algorithms.**
+**Table: Comparison of the number of C-NOT gates between proposed recursive state preparation method via diagonal matrix migration (SPDMM) and other state preparation algorithms.**
 
 | Methods | Script | 2 | 3 | 4 | 5 | 10 | 15 | Leading constant |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
