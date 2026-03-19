@@ -120,5 +120,20 @@ Script: [siable_low_rank](https://github.com/zexianLIPolyU/RSP-SIABLE/blob/main/
 
 # Reference
 
-coming soon..
+
+## Citation
+```BibTeX
+@misc{li2026reducingcnotcountsstate,
+      title={Reducing C-NOT Counts for State Preparation and Block Encoding via Diagonal Matrix Migration}, 
+      author={Zexian Li and Guofeng Zhang and Xiao-Ming Zhang},
+      year={2026},
+      eprint={2603.16492},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2603.16492}, 
+}
+```
+
+
+
 
