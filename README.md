@@ -258,13 +258,14 @@ pytest tests/test_siable.py -v        # 8 tests, ~30 s
 ## Citing
 
 ```bibtex
-@article{LiZhangZhang2026SPDMM,
-  title   = {Reducing {C-NOT} Counts for State Preparation and Block
-             Encoding via Diagonal Matrix Migration},
-  author  = {Li, Zexian and Zhang, Xiao-Ming and Zhang, Guofeng},
-  journal = {IEEE Transactions on Computer-Aided Design of Integrated
-             Circuits and Systems},
-  year    = {2026},
+@misc{li2026reducingcnotcountsstate,
+      title={Reducing C-NOT Counts for State Preparation and Block Encoding via Diagonal Matrix Migration}, 
+      author={Zexian Li and Guofeng Zhang and Xiao-Ming Zhang},
+      year={2026},
+      eprint={2603.16492},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2603.16492}, 
 }
 ```
 
