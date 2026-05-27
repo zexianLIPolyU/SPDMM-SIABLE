@@ -1,0 +1,78 @@
+n,method,u,cx
+5,low-rank,47,21
+5,PB,55,26
+5,Isometry,31,26
+5,low-rank+BlockZXZ,47,21
+5,PB+BlockZXZ,51,25
+5,spdmm,37,18
+5,spdmm (Rust),45,22
+6,low-rank,97,46
+6,PB,97,46
+6,Isometry,63,57
+6,low-rank+BlockZXZ,89,44
+6,PB+BlockZXZ,89,44
+6,spdmm,84,42
+6,spdmm (Rust),88,44
+7,low-rank,211,99
+7,PB,261,127
+7,Isometry,127,120
+7,low-rank+BlockZXZ,207,98
+7,PB+BlockZXZ,229,121
+7,spdmm,178,93
+7,spdmm (Rust),186,97
+8,low-rank,434,212
+8,PB,434,212
+8,Isometry,255,247
+8,low-rank+BlockZXZ,378,202
+8,PB+BlockZXZ,378,202
+8,spdmm,371,199
+8,spdmm (Rust),378,202
+9,low-rank,908,441
+9,PB,1130,557
+9,Isometry,511,502
+9,low-rank+BlockZXZ,880,436
+9,PB+BlockZXZ,962,531
+9,spdmm,761,418
+9,spdmm (Rust),772,424
+10,low-rank,1854,913
+10,PB,1860,918
+10,Isometry,1023,1013
+10,low-rank+BlockZXZ,1574,871
+10,PB+BlockZXZ,1580,876
+10,spdmm,1561,867
+10,spdmm (Rust),1572,872
+11,low-rank,3781,1862
+11,PB,4724,2343
+11,Isometry,2047,2036
+11,low-rank+BlockZXZ,3641,1841
+11,PB+BlockZXZ,3964,2237
+11,spdmm,3151,1774
+11,spdmm (Rust),3162,1779
+12,low-rank,7630,3789
+12,PB,7630,3789
+12,Isometry,4095,4083
+12,low-rank+BlockZXZ,6390,3619
+12,PB+BlockZXZ,6390,3619
+12,spdmm,6376,3612
+12,spdmm (Rust),6380,3615
+13,low-rank,15417,7650
+13,PB,19245,9581
+13,Isometry,8191,8178
+13,low-rank+BlockZXZ,14797,7565
+13,PB+BlockZXZ,16021,9155
+13,spdmm,12798,7303
+13,spdmm (Rust),12807,7308
+14,low-rank,30971,15426
+14,PB,31021,15454
+14,Isometry,16383,16369
+14,low-rank+BlockZXZ,25763,14744
+14,PB+BlockZXZ,25813,14772
+14,spdmm,25734,14736
+14,spdmm (Rust),25744,14742
+15,low-rank,62247,31000
+15,PB,77801,38814
+15,Isometry,32767,32752
+15,low-rank+BlockZXZ,59643,30659
+15,PB+BlockZXZ,64529,37108
+15,spdmm,51548,29627
+15,spdmm (Rust),51562,29635

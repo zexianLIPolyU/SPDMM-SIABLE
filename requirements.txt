@@ -1,0 +1,43 @@
+# =====================================================================
+# Tested versions
+# =====================================================================
+# The pre-computed measurements in tests/data/*.csv were generated with
+# the package versions pinned below.  For exact reproducibility of the
+# compile-time numbers, use these versions; for correctness checks any
+# qiskit >= 2.1 with qclib >= 0.1.15 will do.
+#
+# Re-pinning notes:
+#   - qiskit 2.1+ ships Block-ZXZ as `qs_decomposition`; older versions
+#     don't, and the benchmark runner refuses to start.
+#   - qclib 0.1.15+ exposes the patch points used by `_methods.py`.
+#   - numpy 2.x is fine; numpy 1.x has not been tested with this repo.
+
+# Core algorithm dependencies (always required)
+qiskit==2.4.1
+numpy==2.4.4
+scipy==1.17.1
+numba==0.65.1
+
+# Benchmark + plotting dependencies (tests/, plot_figure/)
+qclib==0.1.15
+pandas==3.0.2
+matplotlib==3.10.8
+
+# Tests (pytest)
+pytest>=7.0
+
+# =====================================================================
+# Looser bounds (for forward-compatibility install)
+# =====================================================================
+# If you don't need byte-for-byte reproducibility of the compile-time
+# numbers, you can use the bounds below instead.  They will work but
+# will produce slightly different timing values:
+#
+#   qiskit>=2.1,<3.0
+#   numpy>=1.24
+#   scipy>=1.10
+#   numba>=0.58
+#   qclib>=0.1.15
+#   pandas>=2.0
+#   matplotlib>=3.6
+#   pytest>=7.0
