@@ -1,7 +1,7 @@
 # SPDMM + SIABLE
 
 Reference Python implementation of two algorithms from
-**Li, Zhang & Zhang (2025)**,
+**Li, Zhang & Zhang (2026)**,
 *"Reducing C-NOT Counts for State Preparation and Block Encoding via Diagonal Matrix Migration"*
 (arxiv `2603.16492`):
 
