@@ -3,7 +3,7 @@
 Reference Python implementation of two algorithms from
 **Li, Zhang & Zhang (2025)**,
 *"Reducing C-NOT Counts for State Preparation and Block Encoding via Diagonal Matrix Migration"*
-(IEEE TCAD, manuscript ID `TCAD-2026-0522`):
+(arxiv `2603.16492`):
 
 - **SPDMM** — *State Preparation via Diagonal Matrix Migration*.
   C-NOT leading constant `(11/12) · 2ⁿ`.
